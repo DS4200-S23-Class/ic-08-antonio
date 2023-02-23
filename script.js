@@ -15,7 +15,7 @@ function buildBarChart() {
       .attr("class", "frame");
   
     // Read data from CSV file
-    d3.csv("/data/data.csv").then((data) => {
+    d3.csv("./data/data.csv").then((data) => {
       // Set up scales
       const maxY = d3.max(data, (d) => parseInt(d.Value));
       const xScale = d3.scaleBand()
